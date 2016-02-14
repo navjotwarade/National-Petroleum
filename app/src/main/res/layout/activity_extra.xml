@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.vable.android.viewandlayoutlessons.LoginActivity"
+    android:id="@+id/loginx"
+    android:background="@drawable/nav1">
+
+    <EditText
+        android:id="@+id/username"
+        android:hint="Username"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_marginTop="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/username"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:hint="Password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:singleLine="true"
+        android:maxLines="1"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="remember me"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password" />
+
+    <TextView
+        android:id="@+id/textview_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Need Help?"
+        android:textColor="#ff000000"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="2"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register "
+            android:id="@+id/button5"
+            android:layout_above="@+id/textview_forgot_password"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1.50" />
+
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:layout_weight="1.03" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome to National Petroleum "
+        android:id="@+id/textView13"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/Base.Theme.AppCompat.Dialog.FixedSize"
+        android:textColor="#ff000000"
+        android:fontFamily="@string/abc_searchview_description_voice"
+        android:textSize="@dimen/abc_text_size_title_material_toolbar" />
+
+    <Button
+        android:id="@+id/enterbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTER"
+        android:layout_weight="1"
+        android:layout_below="@+id/checkbox_remember_me"
+        android:layout_alignRight="@+id/textview_forgot_password"
+        android:layout_alignEnd="@+id/textview_forgot_password" />
+
+</RelativeLayout>

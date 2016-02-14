@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TeamProject272</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start">startActivity</string>
+    <string name="title_activity_table">tableActivity</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_extra">extra</string>
+    <string name="title_activity_register">register</string>
+    <string name="title_activity_about">about</string>
+    <string name="title_activity_xyz">xyz</string>
+</resources>
